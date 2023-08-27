@@ -1,29 +1,37 @@
-/* img{
+img{
     border-radius: 50%;
-    height: 22rem;
-    width: 22rem;
+    height: 12rem;
+    width: 12rem;
 }
 .aboutdiv{
-    width: 100%;
-    height: 65rem;
-    position: relative;
-    bottom: .4rem;
+    width: 75rem;
+    height: 60vh;
+    position: absolute;
+}
+.mainAbout{
+    position: absolute;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 10rem;
+    margin-right: 5rem;
 }
 .right{
-    display: flex;
     float: right;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
+    width: 35rem;
 }
-.left{
-    display: flex;
-    float: left;
-    align-items: center;
-    justify-content: center;
-}
+    .left{
+        display: flex;
+        float: left;
+        align-items: center;
+        justify-content: center;
+    }
 .about{
+    width: 35rem;
     font-size: 4rem;
     text-align: center;
+    color: white;
 }
 .intro1{
     display: flex;
@@ -32,18 +40,152 @@
     justify-content: center;
     align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 45rem;
-    height: 8rem;
+    color: white;
+    width: 27rem;
+    height: 10rem;
     padding: 4rem 4rem 4rem 4rem;
+    cursor: pointer;
+}
+.intro1:hover{
+    text-shadow: 0 0 10px #783edb, 0 0 20px #2632b5, 0 0 40px #3508c8;
 }
 .butt{
-    height: 3rem;
+    height: 2.4rem;
     width: 7rem;
     border-radius: 14px;
-    background-color: white;
+    background-color:white;
     cursor: pointer;
+    margin-left: 45%;
 }
 .butt:hover{
     background-color: black;
     color: white;
-} */
+    text-shadow: 0 0 10px #783edb, 0 0 20px #2632b5, 0 0 40px #3508c8;
+}
+@media screen and (min-width: 250px) {
+    img{
+        border-radius: 50%;
+        height: 8.6rem;
+        width: 8.7rem;
+    }
+    .aboutdiv{
+        width: 19rem;    
+        height: 70vh;
+    }
+    .mainAbout{
+        margin-top: 8rem;   
+        margin-bottom: 5rem;
+        margin-left: 0rem;
+    }
+    .right{
+        width: 10rem;
+    }
+    .left{
+        width: 8rem;
+        height: 18rem;
+    }
+    .about{
+        font-size: 1rem;
+        width: 10rem;
+    }
+    .intro1{
+        font-size: .8rem;    
+        width: 10rem;
+        height: 10rem;
+        padding: 4rem 0rem 4rem 0rem;
+    }
+    .buttdiv{
+        width: 6rem;    
+    }
+    .butt{
+        height: 2rem;
+        width: 5rem;
+        border-radius: 14px;
+        background-color:rgb(255, 255, 199);
+        cursor: pointer;
+        margin-left: 45%;
+    }
+}
+@media screen and (min-width: 706px) {  
+    .aboutdiv{
+        margin-left: 5rem;
+    }
+}
+@media screen and (min-width: 930px) {
+    .aboutdiv{
+        margin-left: 18rem;
+    }
+}
+@media screen and (min-width: 581px) {
+    img{
+        border-radius: 50%;
+        height: 15.6rem;
+        width: 15.7rem;
+    }
+    .aboutdiv{
+        width: 35rem;    
+        height: 70vh;
+    }
+    .mainAbout{
+        margin-top: 8rem;
+        margin-bottom: 5rem;
+        margin-left: 1rem;
+    }
+    .right{
+        width: 20rem;
+    }
+    .left{
+        width: 15rem;
+        height: 25rem;
+    }
+    .about{
+        font-size: 2rem;
+        width: 20rem;
+    }
+    .intro1{
+        font-size: 1rem;
+        width: 20rem;
+        height: 12.8rem;
+    }
+    .buttdiv{
+        width: 16rem;   
+    }
+}
+@media screen and (min-width: 1320px) {
+    img{
+        border-radius: 50%;
+        height: 18.6rem;
+        width: 18.7rem;
+    }
+    .mainAbout{
+        margin-top: 9rem;  
+        margin-bottom: 5rem;
+        margin-left: 10rem;
+        margin-right: 2rem; 
+    }
+    .aboutdiv{
+        width: 65rem;
+        height: 60vh;
+        margin-left: 0rem;
+        position: absolute;
+    }
+    .right{
+        margin-right: 0rem; 
+        width: 45rem;   
+    }
+    .left{
+        width: 20rem;
+        height: 22.6rem;
+    }
+    .about{
+        width: 45rem;
+    }
+    .intro1{
+        font-size: 1.5rem;
+        width: 45rem;
+        height: 10rem;
+    }
+    .buttdiv{
+        width: 45rem;
+    }
+}

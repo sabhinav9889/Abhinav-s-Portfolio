@@ -1,0 +1,219 @@
+.container{
+    position: absolute;
+    z-index: 1;
+    height: 16rem;  
+    width: 27rem;
+    top: 7rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+li{
+    list-style: none;
+}
+.pitem{ 
+    color: white;
+    width: 25rem;
+    height: 12rem;
+    text-align: center;
+    border: 2px solid white;
+}
+.pitem:hover{
+    box-shadow: 5px 5px;
+}
+.pitem h1{
+    margin: 1rem;
+}
+.pitem p{
+    margin: 1rem;
+}
+.icon1{
+    position: relative;
+    top: 1rem;  
+}
+.icon2{
+    position: relative;
+    top: 3rem;  
+}
+.icon3{
+    position: relative;
+    top: 4rem;  
+}
+.icon4{
+    position: relative;
+    top: 6rem;  
+}
+@media screen and (min-width: 100px) {      
+    .container{
+        height: 40rem;
+        width: 15.5rem;
+        bottom: 1rem;
+        top: 2rem;  
+        left: 5rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr); 
+    }
+    .pitem{
+        width: 15rem;
+        height: 8rem;
+    }   
+    .pitem h1{
+        font-size: 13px;
+        margin: 5px;
+    }
+    .pitem p{
+        font-size: 10px;
+        margin: 5px;
+    }
+    .pitem li{
+        margin: 5px;
+    }
+    .icon1{
+        position: relative;
+        font-size: 10px;
+        top: 0rem;
+    }
+    .icon2{
+        position: relative;
+        top: 1rem;
+        font-size: 10px;    
+    }
+    .icon3{
+        position: relative;
+        top: 1rem;      
+        font-size: 10px;
+    }
+    .icon4{
+        position: relative;
+        top: 3.1rem;  
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 590px) {      
+    .container{
+        height: 30rem;      
+        width: 33rem;
+        top: 7rem;
+        left: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .pitem{
+        width: 15rem;
+        height: 8rem;
+    }   
+    .pitem h1{
+        font-size: 13px;
+        margin: 5px;
+    }
+    .pitem p{
+        font-size: 10px;
+        margin: 5px;
+    }
+    .pitem li{
+        margin: 5px;
+    }
+    .icon1{
+        position: relative;
+        top: 0rem;  
+    }
+    .icon2{
+        position: relative;
+        top: 0rem;  
+    }
+    .icon3{
+        position: relative;
+        top: 1rem;  
+    }
+    .icon4{
+        position: relative;
+        top: 2.4rem;  
+    }
+}
+@media screen and (min-width: 900px) {      
+    .container{
+        height: 30rem;      
+        width: 33rem;
+        top: 7rem;
+        left: 15rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .pitem{
+        width: 15rem;
+        height: 8rem;
+    }   
+    .pitem h1{
+        font-size: 13px;
+        margin: 5px;
+    }
+    .pitem p{
+        font-size: 10px;
+        margin: 5px;
+    }
+    .pitem li{
+        margin: 5px;
+    }
+    .icon1{
+        position: relative;
+        top: 0rem;  
+    }
+    .icon2{
+        position: relative;
+        top: 0rem;  
+    }
+    .icon3{
+        position: relative;
+        top: .7rem;  
+    }
+    .icon4{
+        position: relative;
+        top: 2.4rem;  
+    }
+}
+@media screen and (min-width: 1200px) {  
+    .container{
+        height: 35rem;  
+        width: 54rem;
+        bottom: 0.3rem;
+        top: 6rem;
+        left: 18rem;
+    }
+    .pitem{
+        width: 25rem;
+        height: 16rem;
+    }   
+    .pitem h1{
+        font-size: 25px;
+        margin: 5px;
+    }
+    .pitem p{
+        font-size: 16px;
+        margin: 5px;
+    }
+    .pitem li{
+        margin: 5px;
+        padding: 15px;
+    }
+    .icon1{
+        position: relative;
+        top: 2rem;  
+        font-size: 20px;
+    }
+    .icon2{
+        position: relative;
+        top: 5rem;  
+        font-size: 20px;
+    }
+    .icon3{
+        position: relative;
+        top: 5rem;  
+        font-size: 20px;
+    }
+    .icon4{
+        position: relative;
+        top: 7.4rem;  
+        font-size: 20px;
+    }
+}
