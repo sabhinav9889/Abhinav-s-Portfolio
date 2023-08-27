@@ -11,7 +11,7 @@ export default function Nav(){
     return(
         <>
         <div className="mobileNav">
-        {(drop)?<i class="fa-solid fa-xmark fa-2x"onClick={myfunc}></i>:<i class="fa-solid fa-bars fa-2x" onClick={myfunc}></i>}
+        {(drop)?<i className="fa-solid fa-xmark fa-2x"onClick={myfunc}></i>:<i className="fa-solid fa-bars fa-2x" onClick={myfunc}></i>}
           {(drop)?
           <ul className="lism">
             <div className="lim"><li ><Link className="lim" to="/">{nm}</Link></li></div>
