@@ -6,14 +6,13 @@
     color: hsl(0, 0%, 68%);
     font-weight: bold!important;
     font-family: "Anonymous Pro", monospace!important;
-    letter-spacing: 13px!important;
+    letter-spacing: 8x!important;
     overflow: hidden;
     border-right: 7px solid hsl(0, 0%, 80%);
     white-space: nowrap;
     animation: typewriter 4s steps(44) 1s 1 normal both,
     blinkTextCursor 500ms infinite;
   }
-  
   @keyframes typewriter {
     from {
       width: 0;
@@ -39,7 +38,7 @@
     padding: auto;
     position: absolute;
     width: 32rem;
-    height: 35rem;
+    height: 30rem;
     color:white;
     padding: 10px 10px 10px 10px;
 }
@@ -47,7 +46,6 @@
     font-size: 1.5rem!important;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 0px!important;
-    cursor: pointer;
   }
   
   .hd p{
@@ -57,7 +55,6 @@
     -webkit-text-fill-color: transparent;
     animation: shine 3s infinite linear;
   }
-  
   @keyframes shine {
     0% {
       background-position: 0;
@@ -74,28 +71,30 @@
     font-family: 'Courier New', Courier, monospace;
 }
 .par{
-    /* color:rgb(255, 255, 199); */
     color: white;
     font-family: 'Courier New', Courier, monospace;
-}
+} 
 .content{
     margin-top: 10rem;
     padding: auto;
     position: absolute;
-    width: 15rem;
-    height: 26rem;
+    width: 18rem;
+    height: 27rem;
     color:white;
     padding: 10px 10px 10px 10px;
+}
+.par span{
+  display: none;
 }
 .lii{
     padding-bottom: 25px;
 }
 @keyframes typewriter {
     from {
-      width: 0;
+      width: 250px;
     }
     to {
-      width: 220px; 
+      width: 250px; 
     }
 }
 .par{
@@ -115,6 +114,9 @@
     .lii{
         padding-bottom: 25px;
     }
+    .par span{
+      display: inline;
+    }
     @keyframes typewriter {
         from {
           width: 0;
@@ -124,7 +126,7 @@
         }
     }
     .par{
-        letter-spacing: 0px!important;
+        letter-spacing: 1.5px!important;
         white-space: nowrap;
     }
     .hd p{
@@ -153,7 +155,7 @@
         }
     }
     .par{
-        letter-spacing: 7px!important;
+        letter-spacing: 5.6px!important;
         white-space: nowrap;
         font-size: 15px;
     }
@@ -169,28 +171,31 @@ ul{
 i{
     color:white;
     font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 10px #783edb;
 }
 
-i:hover {
+i:hover{
     color: white;
-    text-shadow: 0 0 10px #783edb, 0 0 20px #2632b5, 0 0 40px #3508c8;
+    text-shadow:  0 0 10px #07e533, 0 0 20px #1fde25, 0 0 40px #2ce211;
+    border: none;
 }
 a{
     text-decoration: none;
 }
 .par1{
-    color:white;
+    color: white;
     background-color: transparent;
     cursor: pointer;
     font-size: 15px;  
     width: 8rem;
     height: 2rem;
-    border-radius: 9px black;
     font-family: 'Courier New', Courier, monospace;
+    border: none;
+    box-shadow: 0 0 5px #783edb;
 }
 .par1:hover{
     color: white;
-    text-shadow: 0 0 10px #5224a2, 0 0 20px #11186c, 0 0 40px #361c8b;
+    box-shadow: 0 0 10px #07e533, 0 0 20px #1fde25, 0 0 40px #2ce211;
 }
 .homediv{
     display: flex;

@@ -1,6 +1,7 @@
 import React from "react";
 // import Video  from "./Video";
 import './Home.css';
+import { Link } from "react-router-dom";
 
 export default function Home(){
     return (
@@ -10,15 +11,15 @@ export default function Home(){
           </div> */}
          <div className="content"> 
                <div className="hd item"><p>Abhinav Singh</p></div>
-               <p className="par item">Passionate about changing the world with tech...</p>
+               <p className="par item">Developer  |  Competitive Programmer <span> | Tech Enthusiast</span></p>
                <ul className="item">
                    <li className="lii"><a href="https://github.com/sabhinav9889"><i className="fa-brands fa-github fa-2x"></i></a></li>
                    <li className="lii"><a href="https://www.linkedin.com/in/abhinav-singh-50aa74200/"><i className="fa-brands fa-linkedin fa-2x"></i></a></li>
                   <li className="lii"><a href="https://www.instagram.com/abhi_9nav/"><i className="fa-brands fa-instagram fa-2x"></i></a></li>
                   <li className="lii"><a href="https://twitter.com/sabhi9nav"><i className="fa-brands fa-twitter fa-2x"></i></a></li>
-                  <li className="lii"><a href="https://www.facebook.com/profile.php?id=100008865942179"><i className="fa-brands fa-facebook fa-2x" ></i></a></li>
+                  <li className="lii"><a href="https://leetcode.com/CamLot_9889e/"><i className="fa-sharp fa-solid fa-code fa-2x"></i></a></li>
                </ul>
-               <a href="https://drive.google.com/file/d/1uMkQUw3XsqsKiTlhPD0zAwx49qSiN-Ty/view?usp=sharing"><button className="par1 item">More about me</button></a>
+               <Link to="/about"><button className="par1 item">More about me</button></Link>
         </div>
         </div>
     )

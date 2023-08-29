@@ -33,16 +33,13 @@ ul{
     padding-bottom: 5px;
     cursor: pointer;
 }
-.lim:hover{
-    text-shadow: 0 0 10px #783edb, 0 0 20px #2632b5, 0 0 40px #3508c8;
-}
 .lism{
     position: absolute;
     right: 1rem;
     top: 2rem;
     background-color: black;
     display: block;
-    border: 2px solid white;
+    border: 1px solid white;
     width: 10rem;
     margin-top: 1px;
     opacity: 1;

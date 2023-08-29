@@ -2,108 +2,128 @@ img{
     border-radius: 50%;
     height: 12rem;
     width: 12rem;
+    display: none;
+    box-shadow: 0 0 10px white, 0 0 20px #2632b5, 0 0 40px white;   
 }
 .aboutdiv{
     width: 75rem;
     height: 60vh;
+    top: 10rem;
     position: absolute;
 }
 .mainAbout{
     position: absolute;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    margin-left: 10rem;
+    /* margin-left: 10rem; */
     margin-right: 5rem;
 }
 .right{
+    top: 10rem;
+    position: absolute;
     float: right;
     align-items: center;
     justify-content: center;    
-    width: 35rem;
+    width: 17rem;
 }
-    .left{
-        display: flex;
-        float: left;
-        align-items: center;
-        justify-content: center;
-    }
 .about{
-    width: 35rem;
-    font-size: 4rem;
+    width: 17rem;
+    font-size: 2rem;
     text-align: center;
-    color: white;
 }
+.about{
+    font-size: 2rem!important;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0px!important;
+  }
+  
+  .about{
+    padding-bottom: 10px;
+    background: linear-gradient(to right, white 0, hsl(0, 70%, 34%) 10%, white 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 600px;
+    }
+    100% {
+      background-position: 600px;
+    }
+  }
 .intro1{
     display: flex;
-    font-size: 1.5rem;
+    font-size: 15px;
     text-align: center;
     justify-content: center;
     align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 0 0 5px white;
     color: white;
-    width: 27rem;
-    height: 10rem;
-    padding: 4rem 4rem 4rem 4rem;
-    cursor: pointer;
-}
-.intro1:hover{
-    text-shadow: 0 0 10px #783edb, 0 0 20px #2632b5, 0 0 40px #3508c8;
+    width: 13rem;
+    height: 15rem;
+    padding: 2rem 2rem 2rem 2rem;
 }
 .butt{
-    height: 2.4rem;
-    width: 7rem;
-    border-radius: 14px;
-    background-color:white;
+    height: 2rem;
+    width: 8rem;
+    border: none;
+    color:white;
     cursor: pointer;
-    margin-left: 45%;
+    box-shadow: 0 0 10px #783edb;
+    background-color: transparent;
 }
 .butt:hover{
-    background-color: black;
     color: white;
-    text-shadow: 0 0 10px #783edb, 0 0 20px #2632b5, 0 0 40px #3508c8;
+    box-shadow: 0 0 10px #07e533, 0 0 20px #1fde25, 0 0 40px #2ce211;
 }
-@media screen and (min-width: 250px) {
+.buttdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.butt p{
+    color: white;
+}
+Link{
+    text-decoration: none;
+}
+@media screen and (min-width: 352px) {
     img{
         border-radius: 50%;
         height: 8.6rem;
         width: 8.7rem;
     }
-    .aboutdiv{
-        width: 19rem;    
-        height: 70vh;
-    }
-    .mainAbout{
-        margin-top: 8rem;   
-        margin-bottom: 5rem;
-        margin-left: 0rem;
-    }
     .right{
-        width: 10rem;
-    }
-    .left{
-        width: 8rem;
-        height: 18rem;
+        top: 10rem;
+        left: 2rem;
+        position: absolute;
+        float: right;
+        align-items: center;
+        justify-content: center;    
+        width: 20rem;
     }
     .about{
-        font-size: 1rem;
-        width: 10rem;
+        font-size: 1.5rem;
+        width: 20rem;
     }
     .intro1{
         font-size: .8rem;    
-        width: 10rem;
-        height: 10rem;
-        padding: 4rem 0rem 4rem 0rem;
+        width: 20rem;
+        height: 7rem;
+        padding: 2rem 0rem 2rem 0rem;
     }
     .buttdiv{
-        width: 6rem;    
+        width: 20rem;    
     }
     .butt{
         height: 2rem;
         width: 5rem;
-        border-radius: 14px;
-        background-color:rgb(255, 255, 199);
         cursor: pointer;
-        margin-left: 45%;
     }
 }
 @media screen and (min-width: 706px) {  
@@ -116,8 +136,13 @@ img{
         margin-left: 18rem;
     }
 }
-@media screen and (min-width: 581px) {
+@media screen and (min-width: 850px) {
     img{
+        border-radius: 50%;
+        height: 15.6rem;
+        width: 15.7rem;
+    }
+    .hoverDiv{
         border-radius: 50%;
         height: 15.6rem;
         width: 15.7rem;
@@ -132,30 +157,43 @@ img{
         margin-left: 1rem;
     }
     .right{
-        width: 20rem;
+        top: 10rem;
+        left: 22rem;
+        position: absolute;
+        float: right;
+        align-items: center;
+        justify-content: center;    
+        width: 35rem;
     }
     .left{
-        width: 15rem;
-        height: 25rem;
+        width: 0rem;
+        height: 18rem;
     }
     .about{
-        font-size: 2rem;
-        width: 20rem;
+        font-size: 1rem;
+        width: 35rem;
     }
     .intro1{
-        font-size: 1rem;
-        width: 20rem;
-        height: 12.8rem;
+        font-size: 1.3rem;    
+        width: 35rem;
+        height: 10rem;
+        padding: 4rem 0rem 4rem 0rem;
     }
     .buttdiv{
-        width: 16rem;   
+        width: 35rem;    
+    }
+    .butt{
+        height: 2rem;
+        width: 8rem;
+        cursor: pointer;
     }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1250px) {
     img{
         border-radius: 50%;
         height: 18.6rem;
         width: 18.7rem;
+        display: block;
     }
     .mainAbout{
         margin-top: 9rem;  
@@ -170,6 +208,7 @@ img{
         position: absolute;
     }
     .right{
+        left: 24rem;
         margin-right: 0rem; 
         width: 45rem;   
     }
@@ -179,6 +218,7 @@ img{
     }
     .about{
         width: 45rem;
+        font-size: 4rem;
     }
     .intro1{
         font-size: 1.5rem;

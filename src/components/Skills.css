@@ -9,7 +9,34 @@
     color: white;
     text-align: center;
     font-size: 20px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+  .cntainer h1 {
+    font-size: 1.5rem!important;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0px!important;
+  }
+  
+  .cntainer h1{
+    padding-bottom: 10px;
+    background: linear-gradient(to right, white 0, hsl(0, 70%, 34%) 10%, white 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 600px;
+    }
+    100% {
+      background-position: 600px;
+    }
+  }
+  .cntainer span{
+    visibility: hidden;
   }
   @keyframes load{
     from {
@@ -40,6 +67,7 @@
     font-size: 12px;
     color: #FFF;
     font-weight: bold;
+    box-shadow: 0 0 10px #783edb, 0 0 20px #2632b5, 0 0 40px #3508c8;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
   }
   .bar::before{
@@ -60,7 +88,6 @@
   .bar.back::before{
     background-color:black;
   }
-  
   .bar.learning::before{
     width: calc(85% - 10px);
   }
@@ -75,6 +102,25 @@
   }
   .bar.expert::before{
     width: calc(80% - 10px);
+  }
+  .bar.js::before{
+    width: calc(75% - 10px);
+  }
+  .bar.sql::before{
+    width: calc(65% - 10px);
+  }
+  h4{
+    color: white;
+  }
+  .bar{
+    background-color:  blue;
+  }
+  .cntainer i{
+    color: white;
+    text-shadow: 0 0 10px #783edb, 0 0 20px #2632b5, 0 0 40px #3508c8;
+  }
+  .percentage{
+    font-weight: bolder;
   }
   @media screen and (min-width: 400px) {
     .cntainer{
@@ -92,10 +138,16 @@
   @media screen and (min-width: 900px) {
     .cntainer{
         width: 50%;
-        top: 10rem;
+        top: 9rem;
         left: 23rem;
     }
     .bar{
         font-size: 12px;
+    }
+    svg{
+      position: absolute;
+      color: white;
+      top: 56px; 
+      width: 20px;
     }
   }
